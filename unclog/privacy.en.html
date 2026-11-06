@@ -20,7 +20,7 @@
 
     <main>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated <time datetime="2026-11-03">November 3, 2026</time></p>
+      <p class="updated">Last updated <time datetime="2026-11-06">November 6, 2026</time></p>
 
       <div class="summary">
         <p><strong>Unclog collects no data:</strong> nothing about you, your photos and videos, or how you use
@@ -38,6 +38,8 @@
         <li>Make a video you choose smaller. The app writes a copy of the video at a lower quality, with the original’s
           details, such as when and where it was taken, and its albums. iOS asks you to confirm before the copy takes
           the original’s place, and the original moves to Recently Deleted.</li>
+        <li>Find photos that look alike, taken minutes apart, and exact copies of photos and videos, and show them in
+          stacks with a suggestion of which to keep. You choose; iOS asks you to confirm before anything is deleted.</li>
       </ul>
       <p>Before writing a smaller video, the app checks how much free space your iPhone has. It writes the copy in its
         own temporary folder, and deletes that file when it’s done or, if writing stopped, the next time you open the
@@ -48,6 +50,16 @@
         your iPhone: it isn’t sent anywhere or included in your backups, and iOS may clear it when space runs low. The
         app keeps it only while it has access to all your photos; if you allow only some or none, it deletes the file
         the next time you open it.</p>
+      <p>To find lookalikes, Unclog compares your photos on your iPhone. For each photo, it takes the small preview
+        Photos already keeps on the iPhone and turns it into a feature print, a list of numbers that describes what the
+        picture looks like, with Apple’s Vision framework on the iPhone’s Neural Engine; two prints close together mean
+        two photos that look alike. Nothing is downloaded from iCloud for this, and nothing is uploaded: your photos,
+        the prints and the stacks never leave your iPhone. The app keeps the prints in a cache file, which iOS may clear
+        when space runs low, and the stacks it found and your choices about them, such as the photo you kept or a stack
+        you said isn’t alike, in its own folder, as the identifiers iOS gives your photos on this iPhone, never as
+        pictures. Neither file goes into your backups, and deleting the app removes both. If you leave the app during a
+        check, it may keep comparing for a while with iOS’s permission, with its progress in a Live Activity; it still
+        sends nothing.</p>
 
       <h2>iCloud</h2>
       <p>If you use iCloud Photos, some originals may be only in iCloud. To show one of them, or to make one of those
@@ -72,7 +84,8 @@
 
       <h2>Sharing, keeping and deleting data</h2>
       <p>Unclog collects nothing, so it shares nothing with anyone, and its developer has nothing of yours to
-        delete. What the app measured and its count of free videos stay on your iPhone, as described above. Deleting the app removes its files from
+        delete. What the app measured, the lookalikes it found with their prints and your choices about them, and its
+        count of free videos stay on your iPhone, as described above. Deleting the app removes its files from
         your iPhone, that one included; your photos and videos stay in Photos.</p>
 
       <h2>Children</h2>

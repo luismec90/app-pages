@@ -20,7 +20,7 @@
 
     <main>
       <h1>Política de privacidad</h1>
-      <p class="updated">Última actualización: <time datetime="2026-11-03">3 de noviembre de 2026</time></p>
+      <p class="updated">Última actualización: <time datetime="2026-11-06">6 de noviembre de 2026</time></p>
 
       <div class="summary">
         <p><strong>Unclog no recopila ningún dato:</strong> nada sobre ti, sobre tus fotos y videos, ni sobre
@@ -38,6 +38,9 @@
         <li>Reducir un video que elijas. La app escribe una copia del video en una calidad más baja, con los datos del
           original, como cuándo y dónde se grabó, y sus álbumes. iOS te pide confirmar antes de que la copia ocupe el
           lugar del original, que pasa a Eliminados.</li>
+        <li>Encontrar fotos que se parecen, tomadas con minutos de diferencia, y copias exactas de fotos y videos, y
+          mostrarlas en grupos con una sugerencia de cuál conservar. Tú eliges; iOS te pide confirmar antes de eliminar
+          nada.</li>
       </ul>
       <p>Antes de escribir un video más ligero, la app revisa cuánto espacio libre tiene tu iPhone. Escribe la copia en
         su propia carpeta temporal, y borra ese archivo al terminar o, si la escritura se interrumpió, la próxima vez
@@ -48,6 +51,16 @@
         lado ni se incluye en tus respaldos, y iOS puede borrarlo cuando falta espacio. La app lo conserva solo mientras
         tiene acceso a todas tus fotos; si permites solo algunas o ninguna, borra el archivo la próxima vez que la
         abras.</p>
+      <p>Para encontrar fotos parecidas, Unclog compara tus fotos en tu iPhone. De cada foto toma la miniatura que
+        Fotos ya guarda en el iPhone y la convierte en una huella, una lista de números que describe cómo se ve la
+        imagen, con el framework Vision de Apple en el Neural Engine del iPhone; dos huellas cercanas son dos fotos que
+        se parecen. Para esto no se descarga nada de iCloud ni se sube nada: tus fotos, las huellas y los grupos nunca
+        salen de tu iPhone. La app guarda las huellas en un archivo de caché, que iOS puede borrar cuando falta
+        espacio, y los grupos que encontró y tus decisiones sobre ellos, como la foto que conservaste o un grupo que
+        marcaste como no parecido, en su propia carpeta, como los identificadores que iOS da a tus fotos en este
+        iPhone, nunca como imágenes. Ninguno de los dos archivos se incluye en tus respaldos, y eliminar la app borra
+        ambos. Si sales de la app durante una revisión, puede seguir comparando un rato con permiso de iOS, con su
+        progreso en una Actividad en vivo; sigue sin enviar nada.</p>
 
       <h2>iCloud</h2>
       <p>Si usas Fotos en iCloud, algunos originales pueden estar solo en iCloud. Para mostrar uno de ellos, o para
@@ -74,7 +87,8 @@
 
       <h2>Compartir, conservar y eliminar datos</h2>
       <p>Unclog no recopila nada, así que no comparte nada con nadie, y su desarrollador no tiene nada tuyo que
-        eliminar. Lo que la app midió y su cuenta de videos gratis se quedan en tu iPhone, como se describe arriba. Si eliminas la app, sus archivos
+        eliminar. Lo que la app midió, las fotos parecidas que encontró con sus huellas y tus decisiones sobre ellas, y su
+        cuenta de videos gratis se quedan en tu iPhone, como se describe arriba. Si eliminas la app, sus archivos
         se borran de tu iPhone, ese también; tus fotos y videos se quedan en Fotos.</p>
 
       <h2>Niños</h2>
