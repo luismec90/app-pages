@@ -38,13 +38,16 @@
         <li>Reducir un video que elijas. La app escribe una copia del video en una calidad más baja, con los datos del
           original, como cuándo y dónde se grabó, y sus álbumes. iOS te pide confirmar antes de que la copia ocupe el
           lugar del original, que pasa a Eliminados.</li>
+        <li>Convertir en foto fija una Live Photo que elijas. La app conserva su imagen y quita su video corto, con los
+          datos del original y sus álbumes. iOS te pide confirmar antes de que la foto fija ocupe el lugar del
+          original, que pasa a Eliminados.</li>
         <li>Encontrar fotos que se parecen, tomadas con minutos de diferencia, y copias exactas de fotos y videos, y
           mostrarlas en grupos con una sugerencia de cuál conservar. Tú eliges; iOS te pide confirmar antes de eliminar
           nada.</li>
       </ul>
-      <p>Antes de escribir un video más ligero, la app revisa cuánto espacio libre tiene tu iPhone. Escribe la copia en
-        su propia carpeta temporal, y borra ese archivo al terminar o, si la escritura se interrumpió, la próxima vez
-        que abres la app.</p>
+      <p>Antes de escribir un video más ligero o una foto fija, la app revisa cuánto espacio libre tiene tu iPhone.
+        Escribe la copia en su propia carpeta temporal, y borra ese archivo al terminar o, si la escritura se
+        interrumpió, la próxima vez que abres la app.</p>
       <p>Para abrir más rápido, Unclog guarda en tu iPhone lo que midió: de cada foto y video, el identificador
         que iOS le da en este iPhone, su tamaño, si es foto o video, su fecha, cuánto dura un video, sus dimensiones y
         si es una foto RAW. No guarda imágenes ni lugares. Este archivo nunca sale de tu iPhone: no se envía a ningún
@@ -54,7 +57,9 @@
       <p>Para encontrar fotos parecidas, Unclog compara tus fotos en tu iPhone. De cada foto toma la miniatura que
         Fotos ya guarda en el iPhone y la convierte en una huella, una lista de números que describe cómo se ve la
         imagen, con el framework Vision de Apple en el Neural Engine del iPhone; dos huellas cercanas son dos fotos que
-        se parecen. Para esto no se descarga nada de iCloud ni se sube nada: tus fotos, las huellas y los grupos nunca
+        se parecen. También le pregunta a Vision si una foto muestra caras, no de quién, y qué tan bien está tomada,
+        para sugerir cuál conservar y dejar las fotos con personas fuera de eliminar todo lo sugerido; de las caras
+        guarda solo un sí o un no. Para esto no se descarga nada de iCloud ni se sube nada: tus fotos, las huellas y los grupos nunca
         salen de tu iPhone. La app guarda las huellas en un archivo de caché, que iOS puede borrar cuando falta
         espacio, y los grupos que encontró y tus decisiones sobre ellos, como la foto que conservaste o un grupo que
         marcaste como no parecido, en su propia carpeta, como los identificadores que iOS da a tus fotos en este
@@ -63,22 +68,23 @@
         progreso en una Actividad en vivo; sigue sin enviar nada.</p>
 
       <h2>iCloud</h2>
-      <p>Si usas Fotos en iCloud, algunos originales pueden estar solo en iCloud. Para mostrar uno de ellos, o para
-        reducir uno de esos videos, iOS lo descarga de tu propia cuenta de iCloud, directamente entre tu iPhone y
-        Apple. Los cambios que haces en Unclog, como eliminar un elemento o reemplazar un video por uno más
+      <p>Si usas Fotos en iCloud, algunos originales pueden estar solo en iCloud. Para mostrar uno de ellos, para
+        reducir uno de esos videos o para convertir una Live Photo en foto fija, iOS lo descarga de tu propia cuenta
+        de iCloud, directamente entre tu iPhone y Apple. Los cambios que haces en Unclog, como eliminar un elemento o reemplazar un video por uno más
         ligero, se sincronizan con iCloud y con tus otros dispositivos, como cualquier cambio en Fotos.</p>
       <p>El desarrollador de Unclog nunca recibe tus fotos, tus videos ni nada sobre ellos. La
         <a href="https://www.apple.com/mx/legal/privacy/">Política de privacidad de Apple</a> describe cómo trata Apple
         los datos de iCloud.</p>
 
       <h2>Compras</h2>
-      <p>Descargar Unclog es gratis. Reducir videos es gratis para tus primeros dos videos; después, una compra única
-        dentro de la app lo desbloquea. Apple la vende en el App Store con tu cuenta de Apple, así que el desarrollador
-        de Unclog nunca recibe tu nombre, tu correo ni tus datos de pago. Para mostrar el precio y saber si ya la
-        compraste, la app le pregunta al App Store, que responde a través de iOS.</p>
-      <p>En tu iPhone, la app guarda un solo número: cuántos videos redujo gratis, para saber cuándo se acaban los
-        gratuitos. Como cualquier ajuste de una app, se incluye en los respaldos de tu iPhone, y se borra si eliminas la
-        app.</p>
+      <p>Descargar Unclog es gratis. Reducir videos es gratis para tus primeros dos videos, y convertir Live Photos en
+        fotos fijas para tus primeras diez; después, una sola compra única dentro de la app desbloquea ambas. Apple la
+        vende en el App Store con tu cuenta de Apple, así que el desarrollador de Unclog nunca recibe tu nombre, tu
+        correo ni tus datos de pago. Para mostrar el precio y saber si ya la compraste, la app le pregunta al App
+        Store, que responde a través de iOS.</p>
+      <p>En tu iPhone, la app guarda dos números: cuántos videos redujo gratis y cuántas Live Photos convirtió gratis,
+        para saber cuándo se acaban los gratuitos. Como cualquier ajuste de una app, se incluyen en los respaldos de tu
+        iPhone, y se borran si eliminas la app.</p>
 
       <h2>Tu permiso</h2>
       <p>Unclog te pide acceso a tu fototeca, que necesita para encontrar tus fotos y videos más grandes. Puedes
@@ -87,8 +93,8 @@
 
       <h2>Compartir, conservar y eliminar datos</h2>
       <p>Unclog no recopila nada, así que no comparte nada con nadie, y su desarrollador no tiene nada tuyo que
-        eliminar. Lo que la app midió, las fotos parecidas que encontró con sus huellas y tus decisiones sobre ellas, y su
-        cuenta de videos gratis se quedan en tu iPhone, como se describe arriba. Si eliminas la app, sus archivos
+        eliminar. Lo que la app midió, las fotos parecidas que encontró con sus huellas y tus decisiones sobre ellas, y
+        sus cuentas de videos y Live Photos gratis se quedan en tu iPhone, como se describe arriba. Si eliminas la app, sus archivos
         se borran de tu iPhone, ese también; tus fotos y videos se quedan en Fotos.</p>
 
       <h2>Niños</h2>
