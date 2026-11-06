@@ -4,10 +4,11 @@ The privacy policies and support pages of my iPhone apps. GitHub Pages serves th
 https://luismec90.github.io/app-pages/.
 
 ## How it's laid out
-- One folder per app, named as in its addresses, such as `unclog/`. Each holds four pages, in English and
-  Spanish: `privacy.en.html`, `privacy.es.html`, `support.en.html` and `support.es.html`. The app opens them from
-  About (its `AppLinks.swift`), and App Store Connect lists them as the Privacy Policy and Support URLs, so a page's
-  name never changes.
+- One folder per app, named as in its addresses. Each holds four pages, in English and Spanish: `privacy.en.html`,
+  `privacy.es.html`, `support.en.html` and `support.es.html`. The app opens them from About (its `AppLinks.swift`),
+  and App Store Connect lists them as the Privacy Policy and Support URLs, so a page's name never changes.
+- `unclog/`: Unclog's pages until 6 November 2026, when they moved to the app's own site, getunclog.app (`website/`
+  in its repository). Builds up to 1.0 (2) still open them from About, so the folder stays, unchanged.
 - `freemystorage/`: Unclog's pages from when it was called FreeMyStorage, free with no purchase. Its first TestFlight
   builds still link there, so the folder stays, unlisted and unchanged.
 - `style.css`: the look of every page, in light and dark mode. The pages load nothing from other sites: no fonts,
